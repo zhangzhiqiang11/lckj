@@ -19,6 +19,7 @@ public class ServiceHi {
 	String port;
 	@RequestMapping("/hi")
 	public String home(@RequestParam(value = "name", defaultValue = "forezp") String name){
+		System.out.println("123");
 		return "hi "+name+",i am from port:" +port;
 	}
 }
